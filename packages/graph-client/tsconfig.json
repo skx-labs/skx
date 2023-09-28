@@ -1,0 +1,30 @@
+{
+  "extends": "@sushiswap/typescript-config/esm.json",
+  "include": [
+    "lib", 
+    "resolvers",
+    "transformers"
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "outDir": ".",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "target": "ES2020",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+  },
+  "ts-node": {
+    "swc": true,
+    "esm": true
+  }
+}
